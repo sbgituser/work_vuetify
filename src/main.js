@@ -2,6 +2,11 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import vuetify from './plugins/vuetify'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+
+axios.defaults.baseURL = 'https://8a4woptaxl.execute-api.ap-northeast-1.amazonaws.com'
+Vue.use(VueAxios, axios)
 
 Vue.config.productionTip = false
 
